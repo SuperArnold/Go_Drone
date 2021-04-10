@@ -18,7 +18,7 @@ pipeline:
 build_linux_amd64:
   image: golang:1.10.0
   group: build
-  enviroment:
+  environment:
     - CGO_ENABLED=0
     - GOOS=linux
     - GOARCH=amd64
@@ -28,7 +28,7 @@ build_linux_amd64:
 build_linux_i386:
   image: golang:1.10.0
   group: build
-  enviroment:
+  environment:
     - CGO_ENABLED=0
     - GOOS=linux
     - GOARCH=486
